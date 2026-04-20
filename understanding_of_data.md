@@ -10,3 +10,12 @@ Open Interest — how many contracts are still open (not settled yet)
 The 6 files are just 6 different expiry dates — like 6 different "deadlines" spread across 2025. Feb, Apr, Jun, Aug, Oct, Dec.
 What the price rise means in plain terms: cattle got significantly more expensive through 2024–2025 — roughly from $170 to $248 per hundredweight — mainly because there are fewer cows in the US right now than in decades.
 That's it. Our ML project is trying to predict whether that price will go up, down, or stay flat over the next 5 days.
+
+Target column?
+
+The raw data only tells you what the price was each day. It doesn't tell you whether that day was a good time to buy or sell — that label doesn't exist anywhere, we have to create it ourselves.
+The way we're doing it is simple: for each day, we look 5 days into the future and ask — did the price go up, down, or stay roughly the same?
+
+If it went up more than 0.5% → Buy
+If it fell more than 0.5% → Sell
+If it barely moved → Hold
