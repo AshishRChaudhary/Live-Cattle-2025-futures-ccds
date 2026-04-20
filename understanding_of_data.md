@@ -9,4 +9,4 @@ Open Interest — how many contracts are still open (not settled yet)
 
 The 6 files are just 6 different expiry dates — like 6 different "deadlines" spread across 2025. Feb, Apr, Jun, Aug, Oct, Dec.
 What the price rise means in plain terms: cattle got significantly more expensive through 2024–2025 — roughly from $170 to $248 per hundredweight — mainly because there are fewer cows in the US right now than in decades.
-That's it. Your ML project is trying to predict whether that price will go up, down, or stay flat over the next 5 days.
+That's it. Our ML project is trying to predict whether that price will go up, down, or stay flat over the next 5 days.
